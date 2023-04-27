@@ -1,0 +1,4 @@
+# bombadil.toml
+
+# Path to dotfiles relative to $HOME
+dotfiles_dir = ".dotfiles"
