@@ -1,0 +1,14 @@
+patch:
+  style:
+    horizontal: false
+
+  schema_list:
+    - schema: newcj
+    - schema: chasew
+    - schema: array30
+    - schema: iridium_bpmf
+    - schema: double_bopomo
+    - schema: combo_pinyin
+    - schema: mipa
+    - schema: terra_pinyin
+    # - schema: cangjie5

@@ -1,0 +1,37 @@
+
+[shell.files]
+"shell/tmux.conf" = "~/.tmux.conf"
+"shell/starship.toml" = "~/.config/starship.toml"
+
+[zsh]
+depends = ["shell"]
+
+[zsh.files]
+"shell/zsh/zshrc" = "~/.zshrc"
+"shell/zsh/zshenv" = "~/.zshenv"
+"shell/zsh/sheldon.toml" = { target = "~/.config/sheldon/plugins.toml", type = "symbolic" }
+
+[tealdeer.files]
+"tealdeer.toml" = "~/.config/tealdeer/config.toml"
+
+[btop.files]
+"btop.conf" = "~/.config/btop/btop.conf"
+
+[cargo.files]
+"cargo.config.toml" = "~/.cargo/config.toml"
+
+[terminal.files]
+"alacritty.yml" = "~/.config/alacritty/alacritty.yml"
+"wezterm.lua" = "~/.config/wezterm/wezterm.lua"
+
+[rime.files]
+"rime/default.yaml" = "~/.local/share/fcitx5/rime/default.custom.yaml"
+"rime/iridium_bpmf.yaml" = "~/.local/share/fcitx5/rime/iridium_bpmf.custom.yaml"
+
+[hyprland.files]
+"hypr/hyprland.conf" = "~/.config/hypr/hyprland.conf"
+
+# pipewire = { source = "pipewire/pipewire.conf", target = ".config/pipewire/pipewire.conf" }
+# pipewire-input-filter-chain = { source = "pipewire/filter-chain.conf", target = ".config/pipewire/input-filter-chain.conf" }
+# pipewire-pulse = { source = "pipewire/pipewire-pulse.conf", target = ".config/pipewire/pipewire-pulse.conf" }
+# wireplumber-alsa-config = { source = "wireplumber/alsa-config.lua", target = ".config/wireplumber/main.lua.d/50-alsa-config.lua" }

@@ -1,0 +1,55 @@
+
+
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' auto-description 'specify: %d'
+zstyle ':completion:*' completer _expand _complete _ignored _match _approximate
+zstyle ':completion:*' expand prefix suffix
+zstyle ':completion:*' file-sort name
+zstyle ':completion:*' format 'Completing %d'
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' ignore-parents parent pwd
+zstyle ':completion:*' insert-unambiguous true
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
+zstyle ':completion:*' max-errors 16 numeric
+zstyle ':completion:*' original true
+zstyle ':completion:*' preserve-prefix '//[^/]##/'
+zstyle ':completion:*' verbose true
+zstyle ':completion:*' menu select
+zstyle :compinstall filename '/home/benny/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt autocd correct extendedglob
+bindkey -e
+# End of lines configured by zsh-newuser-install
+
+autoload -Uz zcalc
+
+alias ls="exa --icons"
+alias la="ls -a"
+alias ll="ls -al"
+alias mpv-pixel="mpv --really-quiet -vo=tct"
+alias hx=helix
+
+function mkcd() {
+  mkdir $1 && cd $1
+}
+
+bindkey "^[[3~" delete-char
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+bindkey "^H" backward-kill-word
+bindkey "^[[3~;5~" kill-word
+
+eval "$(thefuck --alias)"
+eval "$(ferium complete zsh)"
+eval "$(sheldon source)"
+eval "$(starship init zsh)"

@@ -1,0 +1,8 @@
+typeset -U path PATH
+
+export PNPM_HOME=~/.local/share/pnpm
+export ANDROID_HOME=~/Android/Sdk
+export EDITOR=helix
+
+path=($PNPM_HOME $ANDROID_HOME/platform-tools ~/.local/bin ~/.cargo/bin /home/benny/.local/share/JetBrains/Toolbox/scripts $path)
+export PATH
