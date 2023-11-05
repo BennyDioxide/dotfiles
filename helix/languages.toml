@@ -1,0 +1,26 @@
+
+# Add `yuck` support support
+# Modified from: SymplyKyle!
+[[language]]
+comment-token = ";"
+file-types = ["clj", "cljs", "cljc", "clje", "cljr", "cljx", "edn", "boot", "yuck"]
+injection-regex = "(clojure|clj|edn|boot|yuck)"
+name = "clojure"
+roots = ["project.clj", "build.boot", "deps.edn", "shadow-cljs.edn"]
+scope = "source.clojure"
+[language.indent]
+tab-width = 2
+unit = "  "
+
+language.language-servers = [ "clojure-lsp" ]
+
+[[language]]
+name = "hypr"
+scope = "source.conf"
+roots = ["hyprland.conf"]
+file-types = [{ suffix = "hypr/conf" }]
+indent = { tab-width = 2, unit = "    "}
+
+[[grammar]]
+name = "hypr"
+source = { git = "https://github.com/luckasRanarison/tree-sitter-hypr" }

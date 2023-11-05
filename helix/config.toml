@@ -1,0 +1,17 @@
+theme = "fleet_dark"
+
+[editor]
+true-color = true
+cursorline = true
+line-number = "relative"
+rulers = [80]
+shell = ["zsh", "-c"]
+bufferline = "always"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
+
+[keys.normal]
+"backspace" = { s = [":w", ":config-reload"], c = [":config-open"] }

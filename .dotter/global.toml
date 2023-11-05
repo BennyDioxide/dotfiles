@@ -20,6 +20,11 @@ depends = ["shell"]
 [cargo.files]
 "cargo.config.toml" = "~/.cargo/config.toml"
 
+[helix.files]
+"helix/config.toml" = "~/.config/helix/config.toml"
+"helix/languages.toml" = "~/.config/helix/languages.toml"
+"helix/themes/base16_tomorrow_night.toml" = "~/.config/helix/themes/base16_tomorrow_night.toml"
+
 [terminal.files]
 "alacritty.yml" = "~/.config/alacritty/alacritty.yml"
 "wezterm.lua" = "~/.config/wezterm/wezterm.lua"
