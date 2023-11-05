@@ -50,6 +50,13 @@ depends = ["gui"]
 "rime/default.yaml" = "~/.local/share/fcitx5/rime/default.custom.yaml"
 "rime/iridium_bpmf.yaml" = "~/.local/share/fcitx5/rime/iridium_bpmf.custom.yaml"
 
+[ags]
+depends = ["gui"]
+
+[ags.files]
+"ags/config.js" = "~/.config/ags/config.js"
+"ags/style.scss" = "~/.config/ags/style.scss"
+
 [ironbar]
 depends = ["gui"]
 
