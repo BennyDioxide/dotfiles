@@ -41,6 +41,7 @@ depends = ["gui"]
 [terminal.files]
 "alacritty.yml" = "~/.config/alacritty/alacritty.yml"
 "wezterm.lua" = "~/.config/wezterm/wezterm.lua"
+"kitty.conf" = { target = "~/.config/kitty/kitty.conf", type ="symbolic" }
 
 [rime]
 depends = ["gui"]
