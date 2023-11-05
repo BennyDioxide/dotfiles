@@ -1,0 +1,32 @@
+let {
+    $workspaces = {
+        type = "workspaces"
+        on_scroll_up = "hyprctl dispatch workspace e-1"
+        on_scroll_down = "hyprctl dispatch workspace e+1"
+    }
+
+    $sys_info = {
+        type = "sys_info"
+        format = [
+            "\uf4bc {cpu_percent}%"
+        ]
+    }
+
+    $launcher = {
+        type = "launcher"
+        favorites = [ "firefox" "dolphin" ]
+    }
+
+    $clock = {
+        type = "clock"
+        format = "%Y/%m/%d %H:%M"
+    }
+
+    $tray = { type = "tray" }
+} in {
+    position = "top"
+    height = 48
+    start = [ $workspaces ]
+    center = []
+    end = [ $tray $sys_info $clock ]
+}

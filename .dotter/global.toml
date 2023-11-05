@@ -42,6 +42,13 @@ depends = ["gui"]
 "rime/default.yaml" = "~/.local/share/fcitx5/rime/default.custom.yaml"
 "rime/iridium_bpmf.yaml" = "~/.local/share/fcitx5/rime/iridium_bpmf.custom.yaml"
 
+[ironbar]
+depends = ["gui"]
+
+[ironbar.files]
+"ironbar/config.corn" = "~/.config/ironbar/config.corn"
+"ironbar/style.css" = "~/.config/ironbar/style.css"
+
 [hyprland]
 depends = ["gui"]
 
