@@ -11,6 +11,13 @@ depends = ["shell"]
 "shell/zsh/zshenv" = "~/.zshenv"
 "shell/zsh/sheldon.toml" = { target = "~/.config/sheldon/plugins.toml", type = "symbolic" }
 
+[nu]
+depends = ["shell"]
+
+[nu.files]
+"shell/nu/config.nu" = "~/.config/nushell/config.nu"
+"shell/nu/env.nu" = "~/.config/nushell/env.nu"
+
 [tealdeer.files]
 "tealdeer.toml" = "~/.config/tealdeer/config.toml"
 
