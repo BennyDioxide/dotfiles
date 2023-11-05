@@ -25,13 +25,25 @@ depends = ["shell"]
 "helix/languages.toml" = "~/.config/helix/languages.toml"
 "helix/themes/base16_tomorrow_night.toml" = "~/.config/helix/themes/base16_tomorrow_night.toml"
 
+[gui.files]
+"fonts.conf" = "~/.config/fontconfig/fonts.conf"
+
+[terminal]
+depends = ["gui"]
+
 [terminal.files]
 "alacritty.yml" = "~/.config/alacritty/alacritty.yml"
 "wezterm.lua" = "~/.config/wezterm/wezterm.lua"
 
+[rime]
+depends = ["gui"]
+
 [rime.files]
 "rime/default.yaml" = "~/.local/share/fcitx5/rime/default.custom.yaml"
 "rime/iridium_bpmf.yaml" = "~/.local/share/fcitx5/rime/iridium_bpmf.custom.yaml"
+
+[hyprland]
+depends = ["gui"]
 
 [hyprland.files]
 "hypr/hyprland.conf" = "~/.config/hypr/hyprland.conf"
